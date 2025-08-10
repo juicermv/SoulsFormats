@@ -59,4 +59,8 @@ jobs:
               run: dotnet nuget add source --username ${{github.actor}} --password ${{ secrets.GITHUB_TOKEN }}  --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
 
             - name: Publish to NuGet
-              run: dotnet nuget push ./artifacts/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+              shell: bash
+              run: |
+                  NUPKG=$(ls ./artifacts/*.nupkg)
+                  echo "Found NuGet package: $NUPKG"
+                  dotnet nuget push "$NUPKG" --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
