@@ -1,6 +1,6 @@
 # SoulsFormats
 
-A .NET library for reading and writing various FromSoftware file formats, targeting .NET Framework 4.6.2 and .NET Standard 2.1.  
+A .NET library for reading and writing various FromSoftware file formats, targeting .NET Framework 4.6.2, .NET Standard 2.1, and .Net 9.0.  
 Dark Souls, Demon's Souls, Bloodborne, and Sekiro are the main focus, but other From games may be supported to varying degrees.  
 A brief description of each supported format can be found in FORMATS.md, with further documentation for some formats.
 
