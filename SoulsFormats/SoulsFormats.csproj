@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <PackageId>JuicerMV.SoulsFormats</PackageId>
     <TargetFrameworks>net462;netstandard2.1</TargetFrameworks>
     <LangVersion>8.0</LangVersion>
     <Version>1.0.0</Version>
@@ -11,6 +12,7 @@
     <RepositoryUrl>https://github.com/juicermv/SoulsFormats</RepositoryUrl>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
