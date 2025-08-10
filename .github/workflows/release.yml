@@ -36,6 +36,8 @@ jobs:
         permissions:
             packages: write
 
+        needs: build
+
         runs-on: windows-latest
         steps:
             - name: Setup .NET
