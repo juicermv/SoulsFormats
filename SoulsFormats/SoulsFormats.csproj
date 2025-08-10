@@ -1,16 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>JuicerMV.SoulsFormats</PackageId>
-    <TargetFrameworks>net462;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net462;netstandard2.1;net9.0</TargetFrameworks>
     <LangVersion>8.0</LangVersion>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageDescription>A .NET library for reading and writing FromSoftware file formats.</PackageDescription>
     <Company>JuicerMV</Company>
-    <Authors>Joseph Anderson, JuicerMV</Authors>
+    <Authors>Joseph Anderson; JuicerMV</Authors>
     <RepositoryUrl>https://github.com/juicermv/SoulsFormats</RepositoryUrl>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
