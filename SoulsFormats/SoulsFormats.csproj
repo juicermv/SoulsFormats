@@ -3,7 +3,6 @@
     <PackageId>JuicerMV.SoulsFormats</PackageId>
     <TargetFrameworks>net462;netstandard2.1</TargetFrameworks>
     <LangVersion>8.0</LangVersion>
-    <Version>1.0.0</Version>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Copyright>Copyright © Joseph Anderson 2019</Copyright>
     <PackageDescription>A .NET library for reading and writing FromSoftware file formats.</PackageDescription>
@@ -23,7 +22,11 @@
     <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
   </ItemGroup>
 
+
   <ItemGroup>
     <PackageReference Include="ZstdSharp.Port" Version="0.8.1" />
+    <PackageReference Include="GitVersion.MsBuild" Version="6.4.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>
