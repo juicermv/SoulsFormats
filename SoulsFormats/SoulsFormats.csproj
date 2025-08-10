@@ -6,7 +6,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageDescription>A .NET library for reading and writing FromSoftware file formats.</PackageDescription>
     <Company>JuicerMV</Company>
-    <Authors>Joseph Anderson, JuicerMV</Authors>
+    <Authors>Joseph Anderson; JuicerMV</Authors>
     <RepositoryUrl>https://github.com/juicermv/SoulsFormats</RepositoryUrl>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
