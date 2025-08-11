@@ -83,5 +83,11 @@ jobs:
                   SNUPKG=$(ls ./artifacts/*.snupkg)
                   echo "Found NuGet package: $NUPKG"
                   echo "Found Symbol package: $SNUPKG"
+
+                  echo "Pushing to GitHub..."
                   dotnet nuget push "$NUPKG" --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
                   dotnet nuget push "$SNUPKG" --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+
+                  echo "Pushing to NuGet..."
+                  dotnet nuget push "$NUPKG" --api-key ${{ secrets.NUGET_API_KEY }} --source "nuget.org"
+                  dotnet nuget push "$SNUPKG" --api-key ${{ secrets.NUGET_API_KEY }} --source "nuget.org"
