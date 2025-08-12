@@ -20,8 +20,9 @@
     <None Include="..\readme.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
-  <ItemGroup Condition="$(TargetFramework.StartsWith('netstandard'))">
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
+  <ItemGroup
+    Condition="$(TargetFramework.StartsWith('netstandard')) Or '$(TargetFramework)' == 'net9.0'">
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="9.0.8" />
   </ItemGroup>
 
 
