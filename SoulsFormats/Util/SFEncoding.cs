@@ -14,7 +14,7 @@ namespace SoulsFormats
 
         static SFEncoding()
         {
-#if NETSTANDARD
+#if (NETSTANDARD || NET)
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 #endif
             ASCII = Encoding.ASCII;
